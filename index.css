@@ -1,0 +1,258 @@
+
+* {box-sizing: border-box;}
+
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+/* typography */
+
+.food-item-name,
+.total-price,
+.price {
+    font-size: 28px;
+}
+
+.food-item-price{
+    font-size: 20px;
+}
+
+.selected-item{
+    font-size: 24px;
+}
+
+.total-price{
+    font-size: 20px;
+}
+
+.enter-card-details,
+.your-order {
+    text-align: center;
+    color: #000000;
+}
+
+.confirmation-text,
+.enter-card-details{
+    text-align: center;
+    padding: 0.5em 1em;
+    font-size: 24px;
+}
+
+.complete-order-btn{
+    font-size: 18px;
+}
+
+.pay-btn{
+    font-size: 20px;
+}
+
+
+/* layout */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 600px;
+    background-color: #d0f0c0;
+   
+}
+
+header {
+    width: 600px;
+}
+
+.title-container {
+    width: 250px;
+    padding-bottom: 2em;
+}
+
+
+
+/* Menu Section */
+
+
+.menu-container {
+    display: flex;
+    width: 508px;
+    height: 140px;
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: space-between; 
+    border-bottom: 1px solid #999997; 
+    margin-top: 2em; 
+    padding-bottom: 0;
+}
+
+.food-item-details {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10em; 
+    width: 150px;   
+}
+
+.food-item-name,
+.food-item-ingredients {
+    margin-bottom: 0.3em;
+}
+
+.food-item-ingredients,
+.food-item-price,
+.food-item-name {
+    margin-top: 0;
+}
+
+
+.food-item-price,
+.food-item-name {
+    
+    font-weight: 700;   
+}
+
+
+.food-item-emoji {
+    
+    margin: 0;
+    font-size: 70px;
+    height: 89px; 
+}
+
+
+/* Buttons */
+
+.add-btn{
+    width: 50px;
+}
+
+.add-btn:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+
+.remove-btn {
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+.remove-btn:hover{
+    cursor: pointer;
+    font-weight: 700;
+    color: #FF0000;
+   
+}
+
+.complete-order-btn,
+.pay-btn {
+    width: 475px;
+    padding: 1em 2em;
+    margin: 0 auto;
+    background-color: #a52a2a;
+    color: #fff;
+    border: none;
+    border-radius: 0.3em;  
+}
+
+.complete-order-btn{
+    order: 4;
+    width: 508px;
+}
+
+.close-modal-btn{
+    display: block;
+    background-color: #a52a2a;
+    color: #fff;
+    border-radius: 0.3em;  
+    border: none;
+    padding: 0.3em 0.5em;
+}
+
+.pay-btn{
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+.complete-order-btn:hover,
+.pay-btn:hover,
+.close-modal-btn:hover {
+    cursor: pointer;
+    background-color: #0E4C92;
+}
+
+.complete-order-btn:disabled{
+    color: whitesmoke;
+    opacity: 0.2;
+    cursor: none;
+}
+
+/* Your Order Menu */
+
+#order-menu-container{
+    display: none; 
+    flex-direction: column;
+}
+
+.order-menu{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    justify-content: space-between; 
+    margin: 0 auto;
+    width: 508px;
+}
+
+.selected-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.your-order{
+    order: 1;
+}
+
+.total-price,
+.price{
+    order: 3;
+}
+
+/* Card Info Modal */
+
+#modal-container{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 525px;
+    height: 450px;
+    padding: 1em 0.5em;
+    background-color: #fff;
+    border-radius: 3.89px;
+    
+}
+
+.input-field{
+    width: 475px;
+    padding: 1em 2em;
+    margin-left: 1em
+}
+
+
+/* Confirmation Page */
+
+.order-confirmation{
+    display: block;
+    width: 504px;
+    background-color: #a52a2a;
+    color: #fff;
+    margin: auto;
+    margin-top: 2em;
+}
+

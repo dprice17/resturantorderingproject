@@ -1,0 +1,86 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        
+    <div class="container" id="container">
+        <header id="header">
+            <div class="title-container">
+                <img src="/header.png">
+            </div> 
+        </header> 
+        
+      <!--------menu feed here------------->
+      
+      <div id="menu-feed">
+      </div>
+      
+      <!------------order selection preview here--------->
+    
+        <div id="order-menu-container" class="order-menu"> 
+          <h1 class="your-order">Your order</h1> 
+          
+                <button 
+                id="orderBtn" 
+                class="complete-order-btn">
+                Complete order</button>
+            
+            <p class="price">Total price</p>
+         </div> 
+      </div>
+      
+      <!-----------------payment modal--------------------->
+       <div class="modal-container" id="modal-container">
+           
+         <div class="close-modal-btn-container">
+             <button id="close-modal-btn" 
+             class="close-modal-btn">
+             x</button>
+         </div>
+         
+        <p class="enter-card-details">Enter card details</p>
+        
+        <form id="customer-payment-info">
+            <label for="name"></label> 
+            <input 
+            id="name"
+            name="name"
+            class="input-field" 
+            type="text" 
+            required 
+            placeholder="Enter your name">
+            </input>
+            
+            <label for="cardNumber"></label> 
+            <input 
+            id="cardNumber"
+            name="cardNumber"
+            class="input-field" 
+            type="number" 
+            min="16"
+            required 
+            placeholder="Enter your card number">
+            </input>
+            
+            <label for="CVV"></label>
+            <input 
+            id="CVV"
+            name="CVV"
+            class="input-field" 
+            type="number" 
+            min="3"
+            required 
+            placeholder="Enter CVV">
+            </input>
+            
+            <button class="pay-btn" id="pay-btn">PAY</button>
+        </form>
+       </div>
+    
+    
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
